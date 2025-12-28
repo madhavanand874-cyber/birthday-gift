@@ -1,89 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Love Scanner 💖</title>
+<meta charset="UTF-8">
+<title>Love Scanner 💖</title>
 
-    <style>
-        body {
-            background: linear-gradient(to right, #ff758c, #ff7eb3);
-            font-family: Arial, sans-serif;
-            text-align: center;
-            color: white;
-            padding-top: 60px;
-        }
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
 
-        .card {
-            background: rgba(255, 255, 255, 0.2);
-            padding: 30px;
-            border-radius: 20px;
-            width: 80%;
-            margin: auto;
-        }
+.card {
+    background: rgba(255,255,255,0.25);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 25px;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    animation: fadeIn 2s ease;
+}
 
-        img {
-            border-radius: 20px;
-            margin: 10px;
-        }
+h1 {
+    color: #fff;
+    margin-bottom: 15px;
+}
 
-        button {
-            background: white;
-            color: #ff4081;
-            font-size: 18px;
-            border: none;
-            border-radius: 20px;
-            padding: 12px 25px;
-            cursor: pointer;
-            margin-top: 20px;
-        }
-    </style>
+p {
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+img {
+    width: 200px;
+    border-radius: 20px;
+    margin: 10px 0;
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    background: #ff4d6d;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #e63950;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+</style>
 </head>
 
 <body>
 
-<div class="card">
-
-    <h1>💖 Love Scanner 💖</h1>
-    <p>Scan Complete ✔</p>
-
-    <!-- First Image -->
-    <img src="love.jpg" width="200">
-
-    <!-- Second Image -->
-    <img src="love2.jpg" width="200">
-
-    <p>
-        Happy Birthday to my beautiful girlfriend.Wishing you a day as amazing 
-        as you are, filled with joy,laughter,and everything your
-        heart desires;you're my sunshine,my dream girl,and
-        the love of my life 💖🎂 <br><br>
-
-        Tum meri life ka sabse important hissa ho 💕 <br>
-        Ek insaan jo hamesha meri zimmedari ho 🥺❤️ <br><br>
-
-        Aaj ke din main sirf itna kehna chahta hoon
-        ki tum mere liye utni hi important hoo jitni
-        meri har subah ki pheli soch aur
-        har raat ki aakhiri dua.
-        tum sirf meri jindgi ka hissa nahi ho,
-        tum meri zindgi hoo💌 <br>
-        Bhgawan tumhe har ek khushi de aur mujhe bs tum 🌸 <br><br>
-
-        Main perfect nahi hoon <br>
-        par tumhare saath perfect banna chahta hoon aur main thumare liye baan ke rhunga ❤️ <br><br>
-
-        I Love You Forever 💖🌹
-    </p>
-
-    <button onclick="alert('Tum meri duniya ho aur hamesha rahogi ❤️🥰')">
-        Tap for Surprise 🎁
-    </button>
-
-</div>
-
-<audio autoplay loop controls>
+<!-- 🎵 Background Music -->
+<audio autoplay loop>
     <source src="song.mp3" type="audio/mpeg">
 </audio>
+
+<div class="card">
+    <h1>💖 Love Scanner 💖</h1>
+
+    <p><strong>Scan Complete ✔</strong></p>
+
+    <img src="love.jpg" alt="Love Image 1">
+    <img src="love2.jpg" alt="Love Image 2">
+
+    <p>
+    Happy Birthday to my beautiful girlfriend. Wishing you a day as amazing as you are, filled with joy, laughter, and everything your heart desires; you're my sunshine, my dream girl, and the love of my life 💖🎂
+    </p>
+
+    <p>
+    Tum meri life ka sabse important hissa ho 💕<br>
+    Ek insaan jo hamesha meri zimmedari ho 🥺❤️
+    </p>
+
+    <p>
+    Aaj ke din main sirf itna kehna chahta hoon ki tum mere liye utni hi important ho jitni meri har subah ki pehli soch aur har raat ki aakhri dua.  
+    Tum sirf meri zindgi ka hissa nahi ho, tum meri zindgi ho 💌  
+    Bhagwan tumhe har ek khushi de aur mujhe bas tum 🌸
+    </p>
+
+    <p>
+    Main perfect nahi hoon,<br>
+    par tumhare saath perfect banna chahta hoon aur main tumhare liye baan ke rhunga ❤️
+    </p>
+
+    <h2 style="color:white;">I Love You Forever ✨🌹</h2>
+
+    <button onclick="surprise()">Tap for Surprise 🎁</button>
+</div>
+
+<script>
+function surprise() {
+    alert("💖 Surprise! 💖\nTum meri zindagi ka sabse khoobsurat hissa ho.\nHappy Birthday meri jaan 🎂❤️");
+}
+</script>
 
 </body>
 </html>
